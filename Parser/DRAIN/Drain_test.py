@@ -221,10 +221,10 @@ class LogParserEdit(Drain.LogParser):
 
         self.df_log.to_csv(
             os.path.join(self.savePath, self.logName.replace('.log', '') + "_structured.csv"),
-            index=False,
-            columns = ['LineId', 'UnixTime', 'Date', 'Time'] + [col for col in self.df_log.columns if col not in ['LineId', 'UnixTime', 'Date', 'Time']]
+            index=False, sep="~"
         )
         
         df_event.to_csv(
-            os.path.join(self.eventPath, self.logName.replace('.log', '') + "_event.csv"), index=False
+            os.path.join(self.eventPath, self.logName.replace('.log', '') + "_event.csv"), 
+            index=False, sep="~"
         )
