@@ -196,11 +196,12 @@ class LogParserEdit(Drain.LogParser):
             # template_id = hashlib.md5(template_str.encode("utf-8")).hexdigest()[0:8]
             template_id = logClust.idEventHash
             template_id_vn = logClust.idEventVN
-            for logID in logClust.logIDL:
-                logID -= 1
-                log_templates[logID] = template_str
-                log_templateids[logID] = template_id
-                log_templateids_vn[logID] = template_id_vn
+            if len(logClust.logIDL) != 0:
+                for logID in logClust.logIDL:
+                    logID -= 1
+                    log_templates[logID] = template_str
+                    log_templateids[logID] = template_id
+                    log_templateids_vn[logID] = template_id_vn
                 
             list_events.append([template_id, template_id_vn, template_str, occurrence]) # Lưu giữ danh sách các Event log và số lần xảy ra
             
