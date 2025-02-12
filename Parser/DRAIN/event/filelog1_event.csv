@@ -1,0 +1,73 @@
+EventId,EventIdVN,EventTemplate,Occurrences
+4250bd41,E1,STARTUP_MSG:,1
+158d8af2,E2,"registered UNIX signal handlers for [TERM, HUP, INT]",1
+4b65458c,E3,loaded properties from hadoop-metrics2.properties,1
+df8b1f8a,E4,Scheduled snapshot period at <*> second(s).,1
+5f30a932,E5,DataNode metrics system started,1
+f5b391b1,E6,Initialized block scanner with targetBytesPerSec <*>,1
+5f9ad58f,E7,Configured hostname is mesos-master-<*>,1
+8284f2c9,E8,Starting DataNode with maxLockedMemory = <*>,1
+13ed7ad8,E9,Opened <*> server at <*>,2
+8b26c6ce,E10,Balancing bandwith is <*> bytes/s,1
+04416266,E11,Number threads for balancing is <*>,1
+ab2d6a71,E12,Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog,1
+f32519dd,E13,"Unable to initialize FileSignerSecretProvider, falling back to use random secrets.",1
+a6fc46f9,E14,Http request log for http.requests.datanode is not defined,1
+6ac8bb9f,E15,Added global filter 'safety' (class=org.apache.hadoop.http.HttpServer2$QuotingInputFilter),1
+691b09d1,E16,Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context <*>,3
+0c33377c,E17,Jetty bound to port <*>,1
+c7e5eb75,E18,jetty-<*>.<*>.<*>,1
+8fa4ca6f,E19,Started HttpServer2$SelectChannelConnectorWithSafeStartup@localhost:<*>,1
+8cacc9b2,E20,Listening HTTP traffic on <*>,1
+670065c5,E21,dnUserName = hdfs,1
+b3de3b93,E22,supergroup = hdfsgroup,1
+ee58b342,E23,Using callQueue class java.util.concurrent.LinkedBlockingQueue,1
+b61f429e,E24,Starting Socket Reader #<*> for port <*>,1
+0c01672d,E25,Refresh request received for nameservices: null,1
+e2571e1d,E26,Starting BPOfferServices for nameservices: <default>,1
+2dcda7b8,E27,Block pool <*> (Datanode Uuid <*> service to mesos-master-<*><*> <*> <*> <*> <*>,2
+50ae7e5c,E28,IPC Server Responder: starting,1
+a61b3b22,E29,IPC Server listener on <*>: starting,1
+420f9fae,E30,Lock on /opt/hdfs/data/in_use.lock acquired by nodename <*>@mesos-master-<*>,1
+d130ef71,E31,Storage directory /opt/hdfs/data is not formatted for BP-<*>-<*>-<*>,1
+99313bd4,E32,Formatting ...,2
+2b78d968,E33,Analyzing storage directories for bpid BP-<*>-<*>-<*>,1
+690caeb7,E34,Locking is disabled for /opt/hdfs/data/current/BP-<*>-<*>-<*>,1
+1d7e5a9a,E35,Block pool storage directory /opt/hdfs/data/current/BP-<*>-<*><*> is not formatted for BP-<*>-<*>-<*>,1
+02a82d2d,E36,Formatting block pool BP-<*>-<*><*> directory /opt/hdfs/data/current/BP-<*>-<*><*>/current,1
+1f3e1f15,E37,Restored <*> block files from trash.,1
+3f700da2,E38,Setting up storage: nsid=<*>;bpid=BP-<*>-<*><*>;lv=<*>;nsInfo=lv=<*>;cid=CID-254fec23-fa57-<*>-<*>-92d5cf14cc2e;nsid=<*>;c=<*>;bpid=BP-<*>-<*><*>;dnuuid=null,1
+c241aec0,E39,Generated and persisted new Datanode UUID d9ef1b17-<*>-4cd8-91eb-095413c3427f,1
+effc776b,E40,Added new volume: DS-f790b728-1e6a-46a8-8ce4-f8d0038a603b,1
+43ce6dd0,E41,"Added volume - /opt/hdfs/data/current, StorageType: DISK",1
+ccaababf,E42,Registered FSDatasetState MBean,1
+ada5b6dc,E43,Adding block pool BP-<*>-<*>-<*>,1
+ff31dd0e,E44,Scanning block pool BP-<*>-<*><*> on volume /opt/hdfs/data/current...,1
+fae3cefd,E45,Time taken to scan block pool BP-<*>-<*><*> on /opt/hdfs/data/current: 16ms,1
+31b8a1a4,E46,Total time to scan all replicas for block pool BP-<*>-<*><*>: 18ms,1
+cc526326,E47,Adding replicas to map for block pool BP-<*>-<*><*> on volume /opt/hdfs/data/current...,1
+423c83a3,E48,Time to add replicas to map for block pool BP-<*>-<*><*> on volume /opt/hdfs/data/current: 0ms,1
+9821ecc6,E49,Total time to add all replicas to map: 2ms,1
+18aff33e,E50,Now scanning bpid BP-<*>-<*><*> on volume /opt/hdfs/data,1
+52a7ecbe,E51,Periodic Directory Tree Verification scan starting at <*> with interval <*>,1
+2f12543b,E52,"VolumeScanner(/opt/hdfs/data, DS-f790b728-1e6a-46a8-8ce4-f8d0038a603b): finished scanning block pool BP-<*>-<*>-<*>",7
+9e42018a,E53,Block pool Block pool BP-<*>-<*><*> (Datanode Uuid null) service to mesos-master-<*><*> successfully registered with NN,1
+34925f22,E54,For namenode mesos-master-<*><*> using DELETEREPORT_INTERVAL of <*> msec BLOCKREPORT_INTERVAL of 21600000msec CACHEREPORT_INTERVAL of 10000msec Initial delay: 0msec; heartBeatInterval=<*>,1
+c8eb09d3,E55,Namenode Block pool BP-<*>-<*><*> (Datanode Uuid d9ef1b17-<*>-4cd8-91eb-095413c3427f) service to mesos-master-<*><*> trying to claim ACTIVE state with txid=<*>,1
+4e23e88d,E56,Acknowledging ACTIVE Namenode Block pool BP-<*>-<*><*> (Datanode Uuid d9ef1b17-<*>-4cd8-91eb-095413c3427f) service to mesos-master-<*><*>,1
+a916f16e,E57,"VolumeScanner(/opt/hdfs/data, DS-f790b728-1e6a-46a8-8ce4-f8d0038a603b): no suitable block pools found to scan. Waiting <*> ms.",82
+11cbea74,E58,"Successfully sent block report <*> containing <*> storage report(s), of which we sent <*>. The reports had <*> total blocks and used <*> RPC(s). This took <*> msec to generate and <*> msecs for RPC and NN processing. Got back one command: FinalizeCommand/<*>.",530
+64f812d6,E59,Got finalize command for block pool BP-<*>-<*>-<*>,530
+23bad376,E60,"BlockPool BP-<*>-<*><*> Total blocks: <*>, missing metadata files:<*>, missing block files:<*>, missing blocks in memory:<*>, mismatched blocks:<*>",529
+b795aad3,E61,"Now rescanning bpid BP-<*>-<*><*> on volume /opt/hdfs/data, after more than <*> hour(s)",6
+baf05a72,E62,Receiving BP-<*>-<*><*>:<*>_<*> src: <*> dest: <*>,5668
+21524583,E63,"src: <*>, dest: <*>, bytes: <*>, op: HDFS_WRITE, cliID: <*> offset: <*>, srvID: d9ef1b17-<*>-4cd8-91eb-095413c3427f, blockid: BP-<*>-<*><*>:<*>_<*>, duration: <*>",4506
+a3b2e44e,E64,"PacketResponder: BP-<*>-<*><*>:<*>_<*>, type=HAS_DOWNSTREAM_IN_PIPELINE terminating",3744
+bc7ae0a1,E65,Scheduling <*>_<*> file <*> for deletion,4435
+727b3d50,E66,Deleted BP-<*>-<*><*> <*>_<*> file <*>,4402
+eaa1e6fe,E67,"PacketResponder: BP-<*>-<*><*>:<*>_<*>, type=LAST_IN_PIPELINE, downstreams=<*>:[] terminating",762
+9847fe99,E68,Received BP-<*>-<*><*>:<*>_<*> src: <*> dest: <*> of size <*>,1162
+f5254044,E69,"VolumeScanner(/opt/hdfs/data, DS-f790b728-1e6a-46a8-8ce4-f8d0038a603b): Scheduling suspect block BP-<*>-<*><*>:<*>_<*> for rescanning.",489
+708533a0,E70,"VolumeScanner(/opt/hdfs/data, DS-f790b728-1e6a-46a8-8ce4-f8d0038a603b): Not scheduling suspect block BP-<*>-<*><*>:<*>_<*> for rescanning, because we rescanned it recently.",3084
+764264d0,E71,"VolumeScanner(/opt/hdfs/data, DS-f790b728-1e6a-46a8-8ce4-f8d0038a603b): suspect block BP-<*>-<*><*>:<*>_<*> is already queued for rescanning.",3
+0b2c2a11,E72,Slow BlockReceiver write packet to mirror took 340ms (threshold=300ms),1
