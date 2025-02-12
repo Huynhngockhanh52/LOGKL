@@ -126,8 +126,15 @@ class LogParserEdit(Drain.LogParser):
         rootNode = self.rootNode       # Địa chỉ Node gốc
         print("Root Node: ", rootNode.digitOrtoken)
         logCluL = self.list_logClust   # Lưu giữ các đối tượng nhóm log Logcluster2 trước đó.
-
-        # -------------------- -----Load dữ liệu----------------------------#
+        # ------------------------- Load dữ liệu ----------------------------#
+        # * Trước khi load dữ liệu, cần phải đưa các biến lưu trữ logIDL về dạng empty list:
+        for logClust in self.list_logClust:
+            logClust.logIDL = [] 
+            
+        # * Đưa dữ liệu df_log về None:
+        self.df_log = None
+        
+        # * Load dữ liệu từ file log
         self.load_data() 
 
         #----------------------------Phân tích------------------------------#
