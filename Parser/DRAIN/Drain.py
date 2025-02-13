@@ -454,7 +454,8 @@ class LogParser:
                     log_messages.append(message)
                     linecount += 1
                 except Exception as e:
-                    print("[Warning] Skip line: " + line)
+                    # print("[Warning] Skip line: " + line)
+                    pass
         logdf = pd.DataFrame(log_messages, columns=headers)
         logdf.insert(0, "LineId", None)
         logdf["LineId"] = [i + 1 for i in range(linecount)]
