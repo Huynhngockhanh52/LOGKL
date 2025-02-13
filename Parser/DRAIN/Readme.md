@@ -7,3 +7,7 @@ Quy chuẩn đặt tên được viết lại thông qua file Drain_test.py
 
 Quy chuẩn đặt tên:
 ![Quy chuẩn đặt tên](./img/image.png)
+
+
+Kết quả rút ra: 
+- HDFS_v1: Tổng số dòng log: 11175629
