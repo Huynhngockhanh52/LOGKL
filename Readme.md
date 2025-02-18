@@ -9,3 +9,11 @@ Viết chương trình remote: https://github.com/buidai123/Kaggle_VSCode_Remote
 + LogPPT (của anh Hoàng)            2023
 + DivLog                            2024
 + ...
+
+Bảng so sánh các công cụ trước đó: Tools and Benchmarks for Automated Log Parsing https://arxiv.org/pdf/1811.03509 
+
+Bài thứ 2 (mới hơn): https://orbilu.uni.lu/bitstream/10993/50072/1/icse2022.pdf
+
+
+Có nhiều công cụ mới từ năm 2023 - 2025
+Tìm kiếm và so sánh tất cả chúng
