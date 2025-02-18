@@ -2,5 +2,5 @@ env/
 .my_env/
 Scripts/
 Include/
-Lib/
+# Lib/
 pyvenv.cfg
