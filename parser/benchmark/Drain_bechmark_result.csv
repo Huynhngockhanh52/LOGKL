@@ -1,0 +1,3 @@
+Dataset,F1_measure,Accuracy
+HDFS,0.999984,0.997500
+BGL,0.999599,0.962500

@@ -4,7 +4,7 @@
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
 # You may obtain a copy of the License at
-#
+# 
 #     http://www.apache.org/licenses/LICENSE-2.0
 #
 # Unless required by applicable law or agreed to in writing, software
@@ -13,7 +13,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 # =========================================================================
-
 
 import regex as re
 import os
@@ -55,7 +54,6 @@ class Node:
         self.depth = depth
         self.digitOrtoken = digitOrtoken
 
-
 class LogParser:
     """
         Class `LogParser` bao gồm các phương thức hỗ trợ quá trình phân tích log.
@@ -83,6 +81,17 @@ class LogParser:
         rex=[],
         keep_para=True,
     ):
+        """
+        Attributes
+        ----------
+            rex : regular expressions used in preprocessing (step1)
+            path : the input path stores the input log file name
+            depth : depth of all leaf nodes
+            st : similarity threshold
+            maxChild : max number of children of an internal node
+            logName : the name of the input file containing raw log messages
+            savePath : the output path stores the file containing structured logs
+        """
         self.path = indir
         self.depth = depth - 2
         self.st = st
@@ -143,7 +152,6 @@ class LogParser:
         retLogClust = self.fastMatch(logClustL, seq)
 
         return retLogClust
-
     def addSeqToPrefixTree(self, rn, logClust):
         """
         Phương thức thực hiện thêm nhóm log "logClust" cho trước vào một internal Node phù hợp
@@ -155,12 +163,12 @@ class LogParser:
         seqLen = len(logClust.logTemplate)
         if seqLen not in rn.childD:
             firtLayerNode = Node(depth=1, digitOrtoken=seqLen)
-            rn.childD[seqLen] = firtLayerNode    # length: Node(phù hợp)
+            rn.childD[seqLen] = firtLayerNode # length: Node(phù hợp)
         else:
             firtLayerNode = rn.childD[seqLen]
 
         parentn = firtLayerNode
-
+        
         # Bắt đầu duyệt các internal node từ lớp thứ 2 để tìm kiếm internal node phù hợp
         currentDepth = 1
         for token in logClust.logTemplate:
@@ -386,15 +394,14 @@ class LogParser:
         if not os.path.exists(self.savePath):
             os.makedirs(self.savePath)
 
-        self.outputResult(logCluL)
+        # self.outputResult(logCluL)
         
-        # Đoạn thêm mới:
-        # for obj in logCluL:
-        #     for key, value in vars(obj).items():
-        #         if key == "logTemplate":
-        #             print(f"{key}: {str(''.join(value))}")
-        # self.printTree(rootNode, self.depth)
-
+        for obj in logCluL:
+            for key, value in vars(obj).items():
+                if key == "logTemplate":
+                    print(f"{key}: {str(''.join(value))}")
+        self.printTree(rootNode, self.depth)        
+        
         print("Parsing done. [Time taken: {!s}]".format(datetime.now() - start_time))
 
     def load_data(self):
