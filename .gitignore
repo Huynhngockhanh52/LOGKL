@@ -3,4 +3,5 @@
 Scripts/
 Include/
 Lib/
+# share/
 pyvenv.cfg
