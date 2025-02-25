@@ -5,3 +5,4 @@ Include/
 Lib/
 share/
 pyvenv.cfg
+read_paper/

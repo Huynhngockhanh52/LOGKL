@@ -1,4 +1,4 @@
-BENCHMARK_BRAIN_SETTING = {
+BECHMARK_BRAIN_SETTINGS = {
     "Proxifier": {
         "log_file": "Proxifier/Proxifier_2k.log",
         "log_format": "\[<Time>\] <Program> - <Content>",

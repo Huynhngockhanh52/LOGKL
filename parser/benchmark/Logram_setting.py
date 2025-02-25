@@ -1,4 +1,4 @@
-BENCHMARK_LOGRAM_SETTING = {
+BECHMARK_LOGRAM_SETTINGS = {
     "HDFS": {
         "log_file": "HDFS/HDFS_2k.log",
         "log_format": "<Date> <Time> <Pid> <Level> <Component>: <Content>",

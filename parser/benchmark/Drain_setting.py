@@ -1,4 +1,4 @@
-BENCHMARK_DRAIN_SETTING = {
+BECHMARK_DRAIN_SETTINGS = {
     "HDFS": {
         "log_file": "HDFS/HDFS_2k.log",
         "log_format": "<Date> <Time> <Pid> <Level> <Component>: <Content>",

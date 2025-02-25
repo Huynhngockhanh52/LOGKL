@@ -1,0 +1,105 @@
+EventId,EventTemplate
+fb195195,<*> <*> <*> <*> <*>
+a4ec7e5b,<*> <*> <*>
+db4c402a,<*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*>
+c00f0b56,<*> class <*> for class <*>
+0ce98313,<*> <*> <*> <*>
+2f7082b2,<*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*>
+be2214fc,<*> <*> <*> <*> <*> <*>
+56b15d2f,<*> <*> <*> for job_1445144423722_0020 <*> <*>
+73d6de92,<*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*>
+de1af8bf,<*> <*> <*> <*> <*> <*> <*> <*>
+81ec4814,<*> Transitioned from NEW to <*>
+8d7c0e6b,<*> <*> <*> <*> <*> <*> <*>
+6b77fa65,jetty-6.1.26
+32df8be6,Started HttpServer2$SelectChannelConnectorWithSafeStartup@<*>:62267
+10357c40,JOB_CREATE job_1445144423722_0020
+8b1732f5,nodeBlacklistingEnabled:true
+62365dbe,queue: default
+9d892b9c,<*> <*> <*> <*> <*> <*> <*> <*> <*>
+e49ab361,<*> Transitioned from <*> <*> <*>
+8825a75c,Processing the event EventType: <*>
+689e86f0,<*> Transitioned from <*> to RUNNING
+e70584d7,Resolved MSRA-SA-39.fareast.corp.microsoft.com to /default-rack
+ac22b5ea,Resolved MSRA-SA-41.fareast.corp.microsoft.com to /default-rack
+af0da6f2,<*> Task Transitioned from NEW to SCHEDULED
+83c1b8ed,<*> TaskAttempt Transitioned from NEW to UNASSIGNED
+c23e3f18,mapResourceRequest:<memory:1024 vCores:1>
+5053ab16,reduceResourceRequest:<memory:1024 vCores:1>
+7dcdb1de,<*> Scheduling: PendingReds:1 <*> <*> <*> AssignedReds:0 CompletedMaps:0 CompletedReds:0 <*> <*> <*> <*>
+703e0729,getResources() for application_1445144423722_0020: ask=4 release= 0 <*> <*> <*> <*> knownNMs=4
+6b3e1b48,Recalculating schedule <*> <*>
+773f4a2b,Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+04b44295,Got allocated containers 1
+3b1a96f4,<*> <*> to /default-rack
+47491a8d,Assigned container <*> <*> <*>
+9c56cf3c,After Scheduling: PendingReds:1 <*> <*> <*> AssignedReds:0 CompletedMaps:0 CompletedReds:0 <*> <*> <*> <*>
+1f1c0422,<*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*>
+e03f95cb,<*> TaskAttempt Transitioned from UNASSIGNED to ASSIGNED
+5aa4cede,Processing the event EventType: CONTAINER_REMOTE_LAUNCH for container <*> <*> <*>
+c77ffeb6,Launching attempt_1445144423722_0020_m_000000_0
+fc9ef42a,Opening proxy : <*>
+4f591581,Shuffle port returned by ContainerManager for <*> : 13562
+e8ad5ede,<*> <*> using containerId: <*> on NM: <*>
+2a94fbaf,<*> TaskAttempt Transitioned from ASSIGNED to RUNNING
+accbe83c,ATTEMPT_START task_1445144423722_0020_m_000000
+a66db97c,<*> Task Transitioned from SCHEDULED to RUNNING
+ad28b9a2,Launching attempt_1445144423722_0020_m_000001_0
+846b3c60,ATTEMPT_START task_1445144423722_0020_m_000001
+d067b1a5,After Scheduling: PendingReds:1 <*> <*> <*> AssignedReds:0 CompletedMaps:0 CompletedReds:0 <*> <*> <*> RackLocal:3
+f943c4b7,Launching attempt_1445144423722_0020_m_000002_0
+605317c5,ATTEMPT_START task_1445144423722_0020_m_000002
+6e3a6141,Auth successful for job_1445144423722_0020 (auth:SIMPLE)
+60675cee,JVM with ID : <*> asked for a task
+2a1c144a,JVM with ID: <*> given task: <*>
+b5ec6e32,Recalculating schedule headroom=<memory:0 vCores:-27>
+66a05594,Progress of TaskAttempt attempt_1445144423722_0020_m_000000_0 is : <*>
+d2e1b8c6,Progress of TaskAttempt attempt_1445144423722_0020_m_000001_0 is : <*>
+7d321161,Progress of TaskAttempt attempt_1445144423722_0020_m_000002_0 is : <*>
+ccb2a5b9,Progress of TaskAttempt attempt_1445144423722_0020_m_000000_0 is : 0.10635664
+bf3cd621,Launching attempt_1445144423722_0020_m_000003_0
+1a7e63f4,ATTEMPT_START task_1445144423722_0020_m_000003
+604064c1,Progress of TaskAttempt attempt_1445144423722_0020_m_000003_0 is : <*>
+017c3ec8,Progress of TaskAttempt attempt_1445144423722_0020_m_000002_0 is : 0.19212553
+5640cc29,Progress of TaskAttempt attempt_1445144423722_0020_m_000000_0 is : 0.19158794
+bf53fcad,Progress of TaskAttempt attempt_1445144423722_0020_m_000000_0 is : 0.27696857
+0f71bb1f,Got allocated containers <*>
+684642cc,Launching attempt_1445144423722_0020_m_000004_0
+a4edfbd5,Launching attempt_1445144423722_0020_m_000005_0
+0f9e00e3,ATTEMPT_START task_1445144423722_0020_m_000004
+1cb15479,ATTEMPT_START task_1445144423722_0020_m_000005
+64234ef1,Launching attempt_1445144423722_0020_m_000006_0
+a59196b5,ATTEMPT_START task_1445144423722_0020_m_000006
+9677a91f,Progress of TaskAttempt attempt_1445144423722_0020_m_000005_0 is : <*>
+6804af38,Progress of TaskAttempt attempt_1445144423722_0020_m_000004_0 is : <*>
+9f576aba,Launching attempt_1445144423722_0020_m_000007_0
+b6ebd73d,ATTEMPT_START task_1445144423722_0020_m_000007
+2c240cf1,Progress of TaskAttempt attempt_1445144423722_0020_m_000006_0 is : <*>
+3092a03e,Launching attempt_1445144423722_0020_m_000008_0
+e18bbe7b,ATTEMPT_START task_1445144423722_0020_m_000008
+212d8df2,Launching attempt_1445144423722_0020_m_000009_0
+ed0241a2,ATTEMPT_START task_1445144423722_0020_m_000009
+91a179b3,<*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> for a <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*>
+bcee5fad,getResources() for application_1445144423722_0020: <*> <*> <*> <*> <*> <*> <*> knownNMs=4
+c67556b2,Progress of TaskAttempt attempt_1445144423722_0020_m_000007_0 is : <*>
+adab7201,Progress of TaskAttempt attempt_1445144423722_0020_m_000008_0 is : <*>
+4bd6aa8a,Progress of TaskAttempt attempt_1445144423722_0020_m_000009_0 is : <*>
+8c294d62,<*> TaskAttempt Transitioned from <*> <*> <*>
+e9a49646,Processing the event EventType: <*> for container <*> <*> <*>
+e70ff2e3,KILLING attempt_1445144423722_0020_m_000003_0
+28f84c2e,<*> Task Transitioned from <*> <*> <*>
+bb185d7f,<*> Scheduling: PendingReds:1 <*> <*> <*> <*> <*> <*> <*> <*> <*> <*>
+cd678305,Reduce slow start threshold <*> <*> <*>
+71849c37,After Scheduling: <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> RackLocal:3
+ea452535,getResources() for application_1445144423722_0020: <*> release= 0 <*> <*> <*> <*> knownNMs=4
+9ea77765,Progress of TaskAttempt attempt_1445144423722_0020_m_000001_0 is : 0.37551183
+c177afdb,Progress of TaskAttempt attempt_1445144423722_0020_m_000002_0 is : 0.38137424
+69b8c60e,Address change detected. Old: msra-sa-41/<*>:9000 New: msra-sa-41:9000
+56587bea,Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for <*> seconds. Will retry shortly ...
+2ef07439,DataStreamer Exception
+b4ff2357,ERROR IN CONTACTING RM.
+037adbe8,Address change detected. Old: msra-sa-41/<*>:8030 New: msra-sa-41:8030
+e6c31ef2,Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10 sleepTime=1000 MILLISECONDS)
+09c21567,<*> <*> <*> <*> <*> java.net.NoRouteToHostException: No <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> java.net.NoRouteToHostException: No <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*>
+11ac0226,KILLING attempt_1445144423722_0020_m_000002_0
+66b62166,KILLING attempt_1445144423722_0020_m_000001_0

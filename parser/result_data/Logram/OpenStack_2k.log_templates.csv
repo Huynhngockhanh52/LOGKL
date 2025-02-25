@@ -1,0 +1,38 @@
+EventId,EventTemplate
+b1c996a9,"<*>.<*>.<*>.<*> ""GET /v<*>/<*>fadb<*>c<*>e<*>cdbaed<*>e<*>c<*>a<*>e/servers/detail HTTP/<*>.<*>"" status: <*> len: <*> time: <*>.<*>"
+2d222f86,<*> <*> <*> <*> (Lifecycle Event)
+c82dac84,<*> <*> During sync_power_state the instance has a pending task (spawning). Skip.
+d5b7deae,image <*>dd<*>-<*>c<*>-<*>fbb-<*>c<*>-<*>fbe<*>b<*> at (/var/lib/nova/instances/_base/a<*>c<*>f<*>c<*>da<*>b<*>c<*>bb<*>ac<*>e<*>): checking
+3bb9d01d,image <*>dd<*>-<*>c<*>-<*>fbb-<*>c<*>-<*>fbe<*>b<*> at (/var/lib/nova/instances/_base/a<*>c<*>f<*>c<*>da<*>b<*>c<*>bb<*>ac<*>e<*>): in use: on this node <*> local <*> on other nodes sharing this instance storage
+7bc5d64e,Active base files: /var/lib/nova/instances/_base/a<*>c<*>f<*>c<*>da<*>b<*>c<*>bb<*>ac<*>e<*>
+be2214fc,<*> <*> <*> <*> <*> <*>
+edb42f2f,"<*>.<*>.<*>.<*> ""POST /v<*>/e<*>ac<*>c<*>b<*>a<*>e<*>f<*>a<*>/os-server-external-events HTTP/<*>.<*>"" status: <*> len: <*> time: <*>.<*>"
+3cb05577,<*> <*> VM Resumed (Lifecycle Event)
+716d7248,<*> <*> <*> <*> successfully.
+e53bfc30,<*> <*> Took <*>.<*> seconds to <*> the instance on the hypervisor.
+fd61db7d,<*> <*> Took <*>.<*> seconds to <*> instance.
+de1af8bf,<*> <*> <*> <*> <*> <*> <*> <*>
+2f7082b2,<*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*>
+fb195195,<*> <*> <*> <*> <*>
+a6ddccbb,"<*>.<*>.<*>.<*><*>.<*>.<*>.<*> ""GET /openstack/<*>-<*>-<*>/meta_data.json HTTP/<*>.<*>"" status: <*> len: <*> time: <*>.<*>"
+a283b7c2,"<*>.<*>.<*>.<*><*>.<*>.<*>.<*> ""GET <*> HTTP/<*>.<*>"" status: <*> len: <*> time: <*>.<*>"
+7de26121,"<*>.<*>.<*>.<*><*>.<*>.<*>.<*> ""GET /openstack/<*>-<*>-<*>/vendor_data.json HTTP/<*>.<*>"" status: <*> len: <*> time: <*>.<*>"
+d49b2095,"<*> <*> <*> HTTP/<*>.<*>"" status: <*> len: <*> time: <*>.<*>"
+0ce98313,<*> <*> <*> <*>
+8d761920,<*> <*> Took <*>.<*> seconds to <*> <*> <*> instance.
+a7a4ff84,Unknown base file: /var/lib/nova/instances/_base/a<*>c<*>f<*>c<*>da<*>b<*>c<*>bb<*>ac<*>e<*>
+6a30fe6e,Removable base files: /var/lib/nova/instances/_base/a<*>c<*>f<*>c<*>da<*>b<*>c<*>bb<*>ac<*>e<*>
+6cc9094d,<*> <*> or swap file: /var/lib/nova/instances/_base/a<*>c<*>f<*>c<*>da<*>b<*>c<*>bb<*>ac<*>e<*>
+9d892b9c,<*> <*> <*> <*> <*> <*> <*> <*> <*>
+6377662f,"<*>.<*>.<*>.<*> ""POST <*> HTTP/<*>.<*>"" status: <*> len: <*> time: <*>.<*>"
+bf30ef9a,<*> <*> <*> <*> <*> <*> MB <*> <*> GB <*> <*> <*>
+30cba956,<*> <*> <*> <*> <*> MB used: <*>.<*> MB
+c9c19e18,<*> <*> <*> <*> <*> <*> <*> <*>.<*> MB
+cc3ba830,<*> <*> <*> <*> <*> GB used: <*>.<*> <*>
+0032602b,<*> <*> <*> limit not specified defaulting to unlimited
+401e7ea3,<*> <*> <*> <*> <*> <*> used: <*>.<*> <*>
+60b01705,"<*>.<*>.<*>.<*> ""GET <*> HTTP/<*>.<*>"" status: <*> len: <*> time: <*>.<*>"
+f18edf6e,<*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*>
+0fb83e8f,<*> or swap <*> <*> <*> <*> <*> <*>
+73d6de92,<*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*>
+45b907f1,<*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> on the hypervisor.

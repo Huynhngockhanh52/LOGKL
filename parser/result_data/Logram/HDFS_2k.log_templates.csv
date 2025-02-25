@@ -1,0 +1,24 @@
+EventId,EventTemplate
+d58a26f6,PacketResponder <*> for block blk_<*> terminating
+9414fb4a,BLOCK* NameSystem.addStoredBlock: blockMap updated: <*>.<*>.<*>.<*>:<*> is added to blk_<*> size <*>
+26e1a861,Received block blk_<*> of size <*> from /<*>.<*>.<*>.<*>
+84fb3d74,Receiving block blk_<*> src: /<*>.<*>.<*>.<*>:<*> dest: /<*>.<*>.<*>.<*>:<*>
+4c5ad3d5,BLOCK* NameSystem.allocateBlock: /user/root/rand/_temporary/_task_<*>_<*>_m_<*>_<*>/part-<*>. blk_-<*>
+dbacea4b,Verification succeeded for blk_-<*>
+88d175c4,BLOCK* NameSystem.allocateBlock: /user/root/rand/_temporary/_task_<*>_<*>_m_<*>_<*>/part-<*>. blk_<*>
+292627c9,Deleting block blk_<*> file <*>
+beb89d6d,<*>.<*>.<*>.<*>:<*> Served block blk_<*> to /<*>.<*>.<*>.<*>
+53fa1fe6,<*>.<*>.<*>.<*>:<*>:Got exception while serving blk_<*> to /<*>.<*>.<*>.<*>:
+9e21c53e,BLOCK* NameSystem.allocateBlock: <*> blk_-<*>
+81358cb3,BLOCK* NameSystem.allocateBlock: <*> blk_<*>
+8dbbddd3,BLOCK* NameSystem.allocateBlock: /user/root/randtxt/_temporary/_task_<*>_<*>_m_<*>_<*>/part-<*>. blk_<*>
+c00d582f,BLOCK* NameSystem.allocateBlock: /user/root/randtxt/_temporary/_task_<*>_<*>_m_<*>_<*>/part-<*>. blk_-<*>
+32777b38,Verification succeeded for <*>
+11547264,BLOCK* NameSystem.delete: blk_<*> is added to invalidSet of <*>.<*>.<*>.<*>:<*>
+175e5518,<*> <*> <*> <*> <*> block blk_<*> to <*>
+4785c338,<*> <*> <*> <*> <*> blk_-<*>
+9fd59f2c,<*> <*> <*> <*> <*> blk_<*>
+48a175a4,Received block blk_<*> src: /<*>.<*>.<*>.<*>:<*> dest: /<*>.<*>.<*>.<*>:<*> of size <*>
+485a6824,<*> <*> <*> <*> <*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_-<*>
+1bb02b60,<*> <*> <*> <*> <*> blk_<*> to <*> <*>.<*>.<*>.<*>:<*>
+3d447964,<*> <*> <*> <*> <*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*> blk_<*>

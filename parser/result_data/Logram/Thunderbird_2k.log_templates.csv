@@ -1,0 +1,52 @@
+EventId,EventTemplate
+caacf772,<*> <*> for user root
+e2d5b264,<*> <*> for user root <*> <*>
+0ce98313,<*> <*> <*> <*>
+6391d957,data_thread() got not answer from any <*> datasource
+c69d4520,synchronized to <*> stratum 3
+1cfe3a76,[ib_sm_sweep.c:1831]: ********************** NEW SWEEP ********************
+eb0cfa2a,[ib_sm_sweep.c:1455]: No topology change
+9db750e6,[ib_sm_sweep.c:1482]: No configuration change required
+73d6de92,<*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*>
+8d7c0e6b,<*> <*> <*> <*> <*> <*> <*>
+be644734,<*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*>
+bc7d6d8a,<*> <*> 00:11:43:e3:ba:c3 via <*>
+ce5c9ba4,<*> <*> <*> <*> 00:11:43:e3:ba:c3 via <*>
+3d2c5961,<*> <*> 00:11:43:e3:ba:c3 via <*> <*> <*> <*> <*> <*>
+9f14d4a9,<*> <*> <*> <*> <*> 00:11:43:e3:ba:c3 via <*>
+0655888c,<*> <*> <*> <*> <*> 00:11:43:e3:ba:c3 via <*> <*> <*> <*>
+76c99562,<*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*>
+fb195195,<*> <*> <*> <*> <*>
+2b822b9b,synchronized to <*> <*> <*>
+9d892b9c,<*> <*> <*> <*> <*> <*> <*> <*> <*>
+82e013db,<*> <*> <*> <*> <*> <*> <*> <*> <*> <*>
+2188fc64,Interpreter enabled
+71585e7e,<*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*>
+1f1c0422,<*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*>
+f18edf6e,<*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*>
+2f7082b2,<*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*>
+be2214fc,<*> <*> <*> <*> <*> <*>
+a4ec7e5b,<*> <*> <*>
+de1af8bf,<*> <*> <*> <*> <*> <*> <*> <*>
+7f533fb9,Initializing.
+84d10a1e,initialized
+f36e8103,passed.
+7ce70afa,autorun ...
+491b5cf3,v2.0 (20020519)
+6da26ba1,Warning: we failed to resolve data <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*>
+82fd8782,Warning: we failed to resolve data <*> <*> <*> <*> <*>
+db4c402a,<*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*>
+48016185,Warning: we failed to resolve <*> <*> <*> <*> <*>
+9b1751bd,succeeded
+260dcbc4,removing chargen
+21dea3dd,removing daytime
+a0183fd1,removing echo
+73265bab,removing eklogin
+ce314661,removing ftp
+f8c3256b,removing klogin
+077005f0,removing kshell
+c27729e2,removing ntalk
+69f0f986,removing printer
+35a2dfee,removing rsync
+8857d862,removing telnet
+9550986e,removing time
