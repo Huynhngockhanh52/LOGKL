@@ -11,7 +11,7 @@ from datetime import datetime
 import time
 import numpy as np
 
-import parser.edit.Drain.Drain as Drain
+import Drain
 
 class LogclusterEdit(Drain.Logcluster):
     """
