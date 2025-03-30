@@ -6,3 +6,5 @@ Lib/
 share/
 pyvenv.cfg
 read_paper/
+remote-ssh-kaggle-vscode/
+report/
