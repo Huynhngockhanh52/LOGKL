@@ -1,0 +1,95 @@
+[
+    {
+        "tool_name": "SLCT",
+        "hyperparameter": [
+            {
+                "name": "support",
+                "min": 0,
+                "max": 100,
+                "default": 0.5
+            }
+        ],
+        "heuristics": false,
+        "frequent_pattern": true,
+        "clustering": false,
+        "online": false,
+        "ml": false,
+        "setting": [
+            {
+                "dataset": "Loghub",
+                "config": [
+                    {
+                        "log_name": "HDFS",
+                        "support": 120
+                    }, 
+                    {
+                        "log_name": "Hadoop",
+                        "support": 125
+                    }
+                ]
+            }, 
+            {
+                "dataset": "Loghub-2.0",
+                "config": [
+                    {
+                        "log_name": "HDFS",
+                        "support": 120
+                    }, 
+                    {
+                        "log_name": "Hadoop",
+                        "support": 125
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "tool_name": "LFA",
+        "hyperparameter": [],
+        "heuristics": false,
+        "frequent_pattern": false, 
+        "clustering": false,
+        "online": false,
+        "ml": false,
+        "setting": []
+    }, 
+    {
+        "tool_name": "Drain",
+        "hyperparameter": [
+            {
+                "name": "st",
+                "min": 0,
+                "max": 100,
+                "default": 0.5
+            }, 
+            {
+                "name": "depth",
+                "min": 0,
+                "max": 100,
+                "default": 0.5
+            }
+        ],
+        "heuristics": true,
+        "frequent_pattern": false,
+        "clustering": false,
+        "online": true,
+        "ml": false,
+        "setting":[
+            {
+                "dataset": "Loghub",
+                "config": [
+                    {
+                        "log_name": "HDFS",
+                        "st": 0.5,
+                        "depth": 4
+                    }, 
+                    {
+                        "log_name": "Hadoop",
+                        "st": 0.5,
+                        "depth": 4
+                    }
+                ]
+            } 
+        ]
+    }
+]

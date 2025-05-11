@@ -1,0 +1,12 @@
+{% extends "Layouts/_root.html" %}
+{% load static %}
+
+{% block content %}
+    <!-- templates/import_log_settings.html -->
+    <h1>Import Log Settings</h1>
+    <form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Import</button>
+    </form>
+{% endblock %}

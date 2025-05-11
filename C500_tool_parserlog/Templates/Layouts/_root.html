@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% load static %}  <!-- Load static để sử dụng các tài nguyên static -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Trang chủ</title>
+        
+        <link rel="shortcut icon" href="{% static 'compiled/svg/favicon.svg' %}" type="image/x-icon">
+
+        <link rel="stylesheet" href="{% static 'compiled/css/app.css' %}">
+        <link rel="shortcut icon" href="{% static 'static/images/Logo_hoc_vien_ANND.png' %}" type="image/x-icon">
+
+        <link rel="stylesheet" href="{% static 'customs/css/root.css' %}">
+        {% comment %} <link rel="stylesheet" href="{% static 'customs/css/fonts.css' %}"> {% endcomment %}
+        {% block styles %}{% endblock styles %}
+    </head>
+
+    <body class="light">
+        <script src="{% static 'static/js/initTheme.js' %}"></script>
+        <div id="app">
+            <div id="sidebar">
+                <div class="sidebar-wrapper active">
+                    {% include "Layouts/partials/sidebar.html" %}
+                </div>
+            </div>  
+
+            <div id="main" class="layout-navbar navbar-fixed" style="position: relative; min-height:100vh">
+                <header>
+                    {% include "Layouts/partials/header.html" %}
+                </header>
+                <div id="main-content">
+                    <div class="page-title ms-2">
+                        <div class="d-flex">
+                            <h4 class="col-9 bold-900 mb-0 mt-1 mb-2">
+                                {% block title %}{% endblock title %}
+                            </h4>
+                        </div>
+                    </div>
+                    <hr style="margin-top:0" />
+                    {% block content %}{% endblock content %}
+                </div>
+                {% include "Layouts/partials/footer.html" %}
+            </div>
+        </div>
+
+        <script src="{% static 'static/js/components/dark.js' %}"></script>
+        <script src="{% static 'extensions/perfect-scrollbar/perfect-scrollbar.min.js' %}"></script>
+        <script src="{% static 'compiled/js/app.js' %}"></script>
+        <script src ="{% static 'extensions/jquery/jquery.min.js' %}"></script>
+
+        <script src="{% static 'customs/js/root.js' %}"></script>
+
+        {% block js %}{% endblock js %}
+    </body>
+
+</html>

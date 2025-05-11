@@ -1,0 +1,90 @@
+{% extends "Layouts/_root.html" %}
+{% load static %}
+
+{% block styles %}
+    <style type="text/css">
+        .modal.slide-right .modal-dialog {
+            animation: slideInRight 0.3s forwards;
+            transform-origin: 100% 0;
+            margin-right: 0;
+            margin-left: auto;
+            width: 40%;
+        }
+
+        table td {
+            padding: 1px 10px !important;
+        }
+    </style>
+{% endblock styles %}
+
+
+{% block title %}
+    CHI TIẾT VỀ CẤU HÌNH DATASET {{dataset.dataset}}:
+{% endblock %}
+
+
+{% block content %}
+{{ dataset }}
+<div class="card border border-primary mb-3">
+    <div class="card-header border-primary bg-primary pb-2 pt-3">
+        <h4 class="bold-800 text-white">Chi tiết:</h4>
+    </div>
+    <div class="card-body">
+        <div class="d-flex flex-row mt-2">
+            <div class="form-group me-1">
+                <p class="fw-bold">dataset: </p>
+                <p class="fw-bold">path: </p>
+                <label class="fw-bold mb-0">config:</label>
+            </div>
+            <div class="form-group">
+                <p> {{ dataset.dataset}} </p>
+                <p> {{ dataset.path}} </p>
+            </div>
+        </div>
+        <div class="panel-body table-responsive ms-2">
+            <table class="table display table-bordered " id="TBIndex">
+                <thead>
+                    <tr>
+                        <th>STT</th>
+                        <th>log_name</th>
+                        <th>log_format</th>
+                        <th>regex</th>
+                        <th>sizelog</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for ds in dataset.config %}
+                        <tr>
+                            <td rowspan="{{ds.sizelog|length}}"> {{ forloop.counter }}</td>
+                            <td rowspan="{{ds.sizelog|length}}"> {{ ds.log_name }}</td>
+                            <td rowspan="{{ds.sizelog|length}}"> {{ ds.log_format }}</td>
+                            <td rowspan="{{ds.sizelog|length}}"> 
+                                {% for regex in ds.regex %}
+                                    {{ regex }}<br>
+                                {% endfor %}
+                            </td>
+                            {% comment %} {{ % for sz in ds.sizelog %}}
+                                <td>
+                                    {{sz.type}}
+                                </td>
+                            {{ % endfor %}} {% endcomment %}
+                            <td class="d-flex justify-content-center align-items-center">
+                                <a class="btn btn-outline-primary m-1" data-bs-toggle="tooltip" data-bs-placement="top" title="Chỉnh sửa" >
+                                    <i class="bi bi-pencil-square"></i>
+                                </a>
+                                <a class="btn btn-outline-secondary m-1" data-bs-toggle="tooltip" data-bs-placement="top" title="Xem chi tiết" >
+                                    <i class="bi bi-file-earmark-text"></i>
+                                </a>
+                                <a class="btn btn-outline-danger m-1" data-bs-toggle="tooltip" data-bs-placement="top" title="Xóa" >
+                                    <i class="bi bi-trash3-fill"></i>
+                                </a>
+                            </td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock %}

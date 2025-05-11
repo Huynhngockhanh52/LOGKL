@@ -1,0 +1,199 @@
+{% extends "Layouts/_root.html" %}
+{% load static %}
+
+{% block styles %}
+    <style type="text/css">
+        .modal.slide-right .modal-dialog {
+            animation: slideInRight 0.3s forwards;
+            transform-origin: 100% 0;
+            margin-right: 0;
+            margin-left: auto;
+            width: 40%;
+        }
+    </style>
+{% endblock styles %}
+
+
+{% block title %}
+    TOÀN BỘ CẤU HÌNH LOGS:
+{% endblock %}
+
+
+{% block content %}
+    {% for ds in data %}
+        <div class="card border border-primary mb-3">
+            <div class="card-header border-primary bg-primary pb-2 pt-3">
+                <h4 class="bold-800 text-white">Dataset: {{ ds.dataset }}
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-4">
+                        <label class="form-label text-label-ib">dataset:</label>
+                        <input type="text" class="form-control" id="{{ ds.id }}" value="{{ ds.dataset }}" data-target="Dataset" required>
+                        <div class="invalid-feedback">
+                            Tên không được để trống!
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <label class="form-label text-label-ib">path:</label>
+                        <input type="text" class="form-control " id="{{ ds.id }}" value="{{ ds.path }}" data-target="Dataset" required>
+                        <div class="invalid-feedback">
+                            Đường dẫn không được để trống!
+                        </div>
+                    </div>
+                    <div class="col-md-1 d-flex justify-content-end align-items-center">
+                        <button type="button" class="btn btn-outline-secondary show-json-btn" data-id-ds="{{ds.id}}" data-bs-toggle="modal" data-bs-target="#ModalDetail"> Raw </button>
+                    </div>
+                </div>
+                <hr style="margin-top:2" />
+                {% comment %} <p>{{ ds.config | length }} logs</p> {% endcomment %}
+                <label class="form-label text-label-ib">configs:</label>
+                <div class="row row-cols-2 row-cols-md-3 g-4">
+                    {% for config in ds.config %}
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body border">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <label class="form-label text-label-ib">log_name:</label>
+                                            <input type="text" class="form-control" id="{{ config.id }}" value="{{ config.log_name }}" data-target="LogConfig" required>
+                                            <div class="invalid-feedback">
+                                                Tên tập dữ liệu log không được để trống!
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <label class="form-label text-label-ib">log_format:</label>
+                                            <textarea class="form-control" rows="3" oninput="this.style.height = ''; this.style.height = this.scrollHeight + 'px'" id="{{ config.id }}"  data-target="LogConfig" required>{{ config.log_format }}</textarea>
+                                            <div class="invalid-feedback">
+                                                Biểu thức định dạng event log không được để trống!
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-12">
+                                            <hr class="my-2" />
+                                            <label class="form-label text-label-ib">regex:</label>
+                                            {% for reg in config.regex %}
+                                                <input type="text" class="form-control mb-1" id="{{ reg.id }}" value="{{ reg.regex }}" data-target="RegexPattern" required>
+                                                <div class="invalid-feedback">
+                                                    Biểu thức regex không được để trống!
+                                                </div>
+                                            {% endfor %}
+                                        </div>
+                                        <div class="col-md-12">
+                                            <hr class="my-2" />
+                                            <label class="form-label text-label-ib">sizelog:</label>
+                                            {% for sz in config.sizelog %}
+                                                <div class="ms-3 card-body row border mb-3 p-1">
+                                                    <div class="col-md-12">
+                                                        <label class="form-label text-label-ib">type:</label>
+                                                        <input type="text" class="form-control" id="{{ sz.id }}" value="{{ sz.type }}" data-target="SizeLog" required>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <label class="form-label text-label-ib">file_log:</label>
+                                                        <input type="text" class="form-control" id="{{ sz.id }}" value="{{ sz.file_log }}" data-target="SizeLog" required>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <label class="form-label text-label-ib">ground_truth:</label>
+                                                        <input type="text" class="form-control" id="{{ sz.id }}" value="{{ sz.ground_truth }}" data-target="SizeLog">
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <label class="form-label text-label-ib">templates:</label>
+                                                        <input type="text" class="form-control" id="{{ sz.id }}" value="{{ sz.templates }}" data-target="SizeLog">
+                                                    </div>
+                                                </div>
+                                            {% endfor %}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+
+    <div class="modal fade slide-right" id="ModalDetail" tabindex="-1" aria-labelledby="ModalDetailEditTitle" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg" role="document">
+            <div class="modal-content" style="min-height:100%;">
+                <div class="modal-header bg-primary">
+                    <h5 class="modal-title white" id="ModalDetailEditTitle">
+                        Thông tin cấu hình dataset dưới dạng raw:
+                    </h5>
+                    <button type="button" class="close white" data-bs-dismiss="modal" aria-label="Close">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x">
+                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <pre id="rawdataset"></pre>
+                </div>
+                <div class="modal-footer" style="justify-content:space-between !important">
+                    <button type="button" class="btn btn-outline-secondary float-end" data-bs-dismiss="modal">
+                        <i class="bx bx-x d-block d-sm-none"></i>
+                        <span class="d-none d-sm-block">Quay lại</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+    
+    
+    
+    
+{% block js %}
+    {{ data|json_script:"rawdata" }}
+    <script>
+        function removeIdFields(obj) {
+            if (Array.isArray(obj)) {
+                obj.forEach(item => removeIdFields(item));
+            } else if (typeof obj === 'object' && obj !== null) {
+                for (let key in obj) {
+                    if (key === 'id') {
+                        delete obj[key]; // Xoá trường id
+                    } else {
+                        removeIdFields(obj[key]); // Gọi lại đệ quy cho con
+                    }
+                }
+            }
+        }
+
+        $(document).ready(function () {
+            try {
+                const data = JSON.parse(document.getElementById('rawdata').textContent);
+
+                // Gắn sự kiện cho tất cả nút có class show-json-btn
+                $(".show-json-btn").on("click", function () {
+                    const datasetId = $(this).data("id-ds");
+                    const dataset = data.find(ds => ds.id == datasetId);
+                    
+                    const datasetCopy = JSON.parse(JSON.stringify(dataset));
+                    removeIdFields(datasetCopy);
+
+                    if (dataset) {
+                        let prettyJSON = JSON.stringify(datasetCopy, null, 4);
+    
+                        // Xoá dòng trắng dư (nếu có)
+                        prettyJSON = prettyJSON.replace(/^\s*[\r\n]/gm, '');
+    
+                        $("#rawdataset").text(prettyJSON);
+                    } else {
+                        $("#rawdataset").text("Không tìm thấy dataset: " + datasetId);
+                    }
+                });
+            } catch (error) {
+                console.error("Lỗi khi xử lý JSON:", error);
+                $("#rawdataset").text("Dữ liệu JSON không hợp lệ.");
+            }
+        });
+        $("#ModalDetail").on('hidden.bs.modal', function () {
+            $(this).find(':focus').blur(); 
+        });
+        
+    </script>
+
+
+{% endblock %}

@@ -1,0 +1,127 @@
+[
+    {
+        "dataset": "Loghub",
+        "path": "Logs/Loghub/",
+        "config": [
+            {
+                "log_name": "Proxifier",
+                "log_format": "[<Time>] <Program> - <Content>",
+                "regex": [
+                    "<\\d+\\ssec",
+                    "([\\w-]+\\.)+[\\w-]+(:\\d+)?",
+                    "\\d{2}:\\d{2}(:\\d{2})*",
+                    "[KGTM]B"
+                ], 
+                "sizelog": [
+                    {
+                        "type": "2k",
+                        "file_log": "Proxifier_2k.log",
+                        "ground_truth": "Proxifier_2k.log_structured.csv",
+                        "template": "Proxifier_2k.log_templates.csv"
+                    },
+                    {
+                        "type": "full",
+                        "file_log": "Proxifier_full.log",
+                        "ground_truth": "",
+                        "template": ""
+                    }
+                ]
+            },
+            {
+                "log_name": "HDFS",
+                "log_format": "<Date> <Time> <Pid> <Level> <Component>: <Content>",
+                "regex": [
+                    "blk_-?\\d+",
+                    "(\\d+\\.){3}\\d+(:\\d+)?"
+                ], 
+                "sizelog": [
+                    {
+                        "type": "2k",
+                        "file_log": "HDFS_2k.log",
+                        "ground_truth": "HDFS_2k.log_structured.csv",
+                        "template": "HDFS_2k.log_templates.csv"
+                    },
+                    {
+                        "type": "full",
+                        "file_log": "Proxifier_full.log",
+                        "ground_truth": "",
+                        "template": "HDFS_templates.csv"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "dataset": "Loghub-2.0",
+        "path": "Logs/Loghub-2.0/",
+        "config": [
+            {
+                "log_name": "Proxifier",
+                "log_format": "[<Time>] <Program> - <Content>",
+                "regex": [
+                    "<\\d+\\ssec",
+                    "([\\w-]+\\.)+[\\w-]+(:\\d+)?",
+                    "\\d{2}:\\d{2}(:\\d{2})*",
+                    "[KGTM]B"
+                ], 
+                "sizelog": [
+                    {
+                        "type": "2k",
+                        "file_log": "Proxifier_2k.log",
+                        "ground_truth": "Proxifier_2k.log_structured.csv",
+                        "template": "Proxifier_2k.log_templates.csv"
+                    },
+                    {
+                        "type": "full",
+                        "file_log": "Proxifier_full.log",
+                        "ground_truth": "",
+                        "template": ""
+                    }
+                ]
+            },
+            {
+                "log_name": "HDFS",
+                "log_format": "<Date> <Time> <Pid> <Level> <Component>: <Content>",
+                "regex": [
+                    "blk_-?\\d+",
+                    "(\\d+\\.){3}\\d+(:\\d+)?"
+                ], 
+                "sizelog": [
+                    {
+                        "type": "2k",
+                        "file_log": "HDFS_2k.log",
+                        "ground_truth": "HDFS_2k.log_structured.csv",
+                        "template": "HDFS_2k.log_templates.csv"
+                    },
+                    {
+                        "type": "full",
+                        "file_log": "HDFS_full.log",
+                        "ground_truth": "",
+                        "template": "HDFS_templates.csv"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "dataset": "MultiLog",
+        "path": "Logs/MultiLog/",
+        "config": [
+            {
+                "log_name": "MultiLog",
+                "log_format": "Null",
+                "regex": [
+                    "<\\d+\\ssec"
+                    ], 
+                "sizelog": [
+                    {
+                        "type": "full",
+                        "file_log": "MultiLog_full.log",
+                        "ground_truth": "",
+                        "template": ""
+                    }
+                ]
+            }
+        ]
+    }
+]

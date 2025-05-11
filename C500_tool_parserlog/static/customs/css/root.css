@@ -1,0 +1,40 @@
+/* Chỉnh sửa lại sidebar: */
+.sidebar-wrapper {
+    width: 270px !important;
+}
+.sidebar-wrapper .menu .submenu .submenu-item a {
+    padding: 0.7rem 0.5rem !important;
+}
+
+.sidebar-wrapper .menu {
+    padding: 0 1rem 0 1.5rem !important;
+}
+
+
+/* Các chỉnh sửa nhỏ */
+.bold-600 {
+    font-weight: 600!important;
+}
+.bold-700 {
+    font-weight: 700 !important;
+}
+.bold-800 {
+    font-weight: 800 !important;
+}
+.bold-900 {
+    font-weight: 900 !important;
+}
+.bold-1000 {
+    font-weight: 1000 !important;
+}
+
+/* Label các ô điền trong phần Create, Edit, ...*/
+.text-label-ib {
+    font-style: italic;
+    font-weight: 700 !important;
+}
+
+a.highlight-links:hover {
+    font-weight: bold;
+    font-style: italic;
+}
